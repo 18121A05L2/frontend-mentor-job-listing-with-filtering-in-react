@@ -1,0 +1,78 @@
+*{
+  margin: 0;
+  padding:0;
+}
+body{
+  height:100vh;
+  font-weight:bold;
+  letter-spacing: 0.05rem;
+  font-family: "Spartan",sans-serif;
+}
+.app{
+  display: flex;
+  border:2px solid red;
+  flex-direction: column;
+  background-color: hsl(180, 52%, 96%);
+  padding: 2rem 8rem;
+}
+.rectangle{
+  display: flex;
+  min-height: 9rem;
+  margin: 2rem;
+  padding: 1rem;
+  shape-outside: margin-box;
+  box-shadow: 6px 10px 24px 1px rgb(0 0 0/40% );
+  border-radius: 0.7rem;
+}
+
+.leftflex{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+img{
+  width:7rem;
+  margin:1rem;
+  margin-right: 2rem;
+}
+h4,span{
+  display: inline-block;
+  margin: 0.5rem;
+}
+
+.new{
+  background-color:#5ba4a4;
+  color:white;
+  border-radius:1rem;
+  padding: 0.5rem;
+}
+.featured{
+  background-color:black;
+  color:white;
+  border-radius:1rem;
+  padding: 0.5rem;
+}
+.downtags{
+  color:#7b8e8e;
+  font-weight: 300;
+}
+.rightflex{
+  display:flex;
+  margin-left:auto;
+  align-items: center;
+  justify-content: flex-end;
+  color: #5ba4a4;
+}
+.right {
+  margin:0.3rem;
+  padding:0.75rem;
+}
+.right:hover{
+  background-color:#5ba4a4;
+  color:white;
+  border-radius: 0.5rem;
+}
+
+#feature-border {
+    border-left: 30px solid #5ba4a4;
+}
