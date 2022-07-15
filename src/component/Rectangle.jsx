@@ -4,6 +4,10 @@ import Images from "./images";
 
 export default function Rectangle(props){
   const obj=props.obj;
+  function handleClick(event){
+    console.log(event.target.innerText)
+    props.clickedText(event.target.innerText)
+  }
 
   return (<div id={ obj["top_tags"][2] && "feature-border"} className="rectangle">
     <img src={Images[obj["top_tags"][0]]} alt=""/>
@@ -22,16 +26,14 @@ export default function Rectangle(props){
     </div>
 
     <div className="rightflex">
-      <span className="right" > {obj["role"]} </span>
-      <span className="right" > {obj["level"] }</span>
-      <span className="right" >{ obj["languages"][0] }</span>
-      {obj["languages"][1]  &&  <span className="right" > {obj["languages"][1] } </span>}
-      {obj["languages"][2]  &&  <span className="right" > {obj["languages"][2] } </span> }
-      {obj["tools"][0]  &&  <span className="right" > {obj["tools"][0] }     </span> }
-      {obj["tools"][1]  &&  <span className="right" > {obj["tools"][1] }     </span> }
+      <span onClick={handleClick} className="right" > {obj["role"]} </span>
+      <span onClick={handleClick} className="right" > {obj["level"] }</span>
+      <span onClick={handleClick} className="right" >{ obj["languages"][0] }</span>
+      {obj["languages"][1]  &&  <span onClick={handleClick} className="right" > {obj["languages"][1] } </span>}
+      {obj["languages"][2]  &&  <span onClick={handleClick} className="right" > {obj["languages"][2] } </span> }
+      {obj["tools"][0]  &&  <span onClick={handleClick} className="right" > {obj["tools"][0] }     </span> }
+      {obj["tools"][1]  &&  <span onClick={handleClick} className="right" > {obj["tools"][1] }     </span> }
 
     </div>
-
-
     </div>);
 }
