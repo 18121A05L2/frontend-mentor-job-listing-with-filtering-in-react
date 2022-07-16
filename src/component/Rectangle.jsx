@@ -5,7 +5,6 @@ import Images from "./images";
 export default function Rectangle(props){
   const obj=props.obj;
   function handleClick(event){
-    console.log(event.target.innerText)
     props.clickedText(event.target.innerText)
   }
 

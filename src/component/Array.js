@@ -38,7 +38,7 @@ const Array = [
   {
     top_tags : ["Loop Studios"],
     main_role : "Software Engineer",
-    down_tags :["1w ago","Full Time","             Worldwide"] ,
+    down_tags :["1w ago","Full Time","Worldwide"] ,
     role :"Fullstack",
     level:"Midweight",
     languages:["JavaScript","Ruby"],
@@ -78,7 +78,7 @@ const Array = [
     role :"Fullstack",
     level:"Midweight",
     languages:["JavaScript","Python"],
-    tools:["  Django"]
+    tools:["Django"]
   },
   {
     top_tags : ["The Air Filter Company"],
