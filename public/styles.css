@@ -126,7 +126,9 @@ a{
   background-color: black;
 }
 
-
+h3:hover{
+  color:#5ba4a4;
+}
 
 
 
@@ -157,6 +159,6 @@ a{
     margin-bottom:0.75rem;
   }
   #feature-border {
-      border-left: 6px solid #5ba4a4;
+      border-left: 10px solid #5ba4a4;
   }
 }
